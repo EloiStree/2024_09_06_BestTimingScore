@@ -8,16 +8,23 @@
   "description": "Tool to quickly put a timer in your mini game with a save of the best score.",                         
   "keywords": ["Script","Tool"],                       
   "dependencies":{},     
-  "relatedPackages":{},     
-  "samples" : [],     
-  "author" : {
-"name":"",
-"mail":"",
-"url":""},     
+  "relatedPackages":{},       
+  "samples": [
+    {
+      "displayName": "Demo Scene",
+      "description": "A sample scene that demonstrates the features of this package.",
+      "path": "Scene/Demo"
+    }
+  ],
+  "author": {
+    "name": "Eloi Stree",
+    "mail": "",
+    "url": "https://github.com/EloiStree/"
+  },  
   "repository":{
 "type":"Git",
 "url":"https://github.com/EloiStree/2024_09_06_BestTimingScore.git",
 "footprint":"",
 "revision":""},     
-  "category": "Script"                   
+  "category": "Script"         
 } 
