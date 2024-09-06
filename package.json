@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.elab.besttiming",                              
+  "displayName": "Best Timing Score",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Tool to quickly put a timer in your mini game with a save of the best score.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_09_06_BestTimingScore.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
