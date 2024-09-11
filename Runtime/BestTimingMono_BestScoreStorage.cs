@@ -4,22 +4,24 @@ using UnityEngine.Events;
 
 public class BestTimingMono_BestScoreStorage : MonoBehaviour
 {
-    public const float m_defaultBestScore = 600;
-    public float m_bestTimingEver = m_defaultBestScore;
+    public TimeBestScoreType m_timeBestScoreType;
+    public float m_bestTimingEver ;
     public string m_storageGuid;
     public string m_bestScoreFormat= "{0:000.000}";
 
     public UnityEvent<float> m_newBestScoreEver;
     public UnityEvent<string> m_newBestScoreAsString;
 
+
     private void Reset()
     {
         ChangeGuid();
     }
-
-    public void ResetBestScore() { 
+    public void ResetBestScoreTo(float valueInToStore) { 
     
-        m_bestTimingEver = m_defaultBestScore;
+        m_bestTimingEver = valueInToStore;
+        SaveBestScore();
+        NotifyBestScoreChanged();
     }
 
     [ContextMenu("Change Guid")]
@@ -39,6 +41,13 @@ public class BestTimingMono_BestScoreStorage : MonoBehaviour
         m_newBestScoreEver.Invoke(timing);
         m_newBestScoreAsString.Invoke(string.Format(m_bestScoreFormat, timing));
         
+    }
+
+    public void ResetBestscoreToUndefined() { 
+    
+        m_bestTimingEver = -1;
+        SaveBestScore();
+        LoadBestScore();
     }
 
     private void Start()
@@ -103,12 +112,12 @@ public class BestTimingMono_BestScoreStorage : MonoBehaviour
             }
             else
             {
-                m_bestTimingEver = m_defaultBestScore;
+                m_bestTimingEver = -1;
             }
         }
         else
         {
-            m_bestTimingEver = m_defaultBestScore;
+            m_bestTimingEver = -1;
         }
         m_wasLoadedOnce = true;
         NotifyBestScoreChanged();

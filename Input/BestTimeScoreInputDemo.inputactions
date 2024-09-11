@@ -1,0 +1,54 @@
+{
+    "name": "BestImeScoreInputDemo",
+    "maps": [
+        {
+            "name": "BestTimeDemo",
+            "id": "8970313b-3a14-4973-9c0a-a12b2169bbca",
+            "actions": [
+                {
+                    "name": "PlayerBestTimeNow",
+                    "type": "Button",
+                    "id": "9eb30264-35e3-4f23-8a1d-34182b3c647e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ResetBestTimeToZero",
+                    "type": "Button",
+                    "id": "439266cd-d1c5-49c4-b0a3-d31c5903b552",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "74b01433-247c-4e74-8009-716059cf2196",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlayerBestTimeNow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d3ade889-3fc5-424c-ae6d-d67ae2136fdd",
+                    "path": "<Keyboard>/delete",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResetBestTimeToZero",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -34,7 +34,7 @@ public class BestTimingMono_SessionBestScore : MonoBehaviour
     public void ResetCurrentBestScore() { 
     
         if(m_timeBestScoreType== TimeBestScoreType.BestTime)
-        m_bestMeasureTime = 600;
+            m_bestMeasureTime = 600;
         else if(m_timeBestScoreType== TimeBestScoreType.Survival)
             m_bestMeasureTime = 0;
         m_bestTimingChanged.Invoke(m_bestMeasureTime);
