@@ -327,11 +327,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2282838264915549002, guid: e57cd9bf509191e45bf66689eacacd1c,
-        type: 3}
-      propertyPath: m_timeBestScoreType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3251467772551778972, guid: e57cd9bf509191e45bf66689eacacd1c,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -451,11 +446,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4116340214889723601, guid: e57cd9bf509191e45bf66689eacacd1c,
-        type: 3}
-      propertyPath: m_timeBestScoreType
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4157333935078809907, guid: e57cd9bf509191e45bf66689eacacd1c,
         type: 3}
@@ -814,150 +804,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5345644537670379371, guid: e57cd9bf509191e45bf66689eacacd1c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1055728111}
-    - targetCorrespondingSourceObject: {fileID: 4513323376583472750, guid: e57cd9bf509191e45bf66689eacacd1c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2101639196}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e57cd9bf509191e45bf66689eacacd1c, type: 3}
---- !u!114 &1002333397 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2282838264915549002, guid: e57cd9bf509191e45bf66689eacacd1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1002333396}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e847e17d85269ff40b53321efa797c6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1002333398 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4513323376583472750, guid: e57cd9bf509191e45bf66689eacacd1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1002333396}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1002333399 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5345644537670379371, guid: e57cd9bf509191e45bf66689eacacd1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1002333396}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1055728110
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1055728111}
-  m_Layer: 0
-  m_Name: Put your current time here
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1055728111
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055728110}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1002333399}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1101318289
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1101318291}
-  - component: {fileID: 1101318290}
-  m_Layer: 0
-  m_Name: TDD_Time And Best Time
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1101318290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101318289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a04b9ef673529fe41999dc6639607f80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_currentTiming: 0
-  m_confirmedTiming: {fileID: -4505572067197711859, guid: f4ff7ee7b8933c44b95a2b9fde32aac8,
-    type: 3}
-  m_onConfirmTiming:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1002333397}
-        m_TargetAssemblyTypeName: BestTimingMono_SessionBestScore, Assembly-CSharp
-        m_MethodName: SetLastTimingInSeconds
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onCurrentTiming:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1915030046}
-        m_TargetAssemblyTypeName: SkyRidingMono_SecondsToFormatString, Assembly-CSharp
-        m_MethodName: PushInSeconds
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_timingInSeconds: 0
---- !u!4 &1101318291
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1101318289}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48383704, y: -0.14456996, z: 0.7906765}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231089092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,89 +977,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1328352463
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1328352464}
-  - component: {fileID: 1328352465}
-  m_Layer: 0
-  m_Name: Reset Best Score
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1328352464
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328352463}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3996493, y: 0.9962915, z: -1.3743457}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1328352465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328352463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: f4ff7ee7b8933c44b95a2b9fde32aac8,
-    type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9eb30264-35e3-4f23-8a1d-34182b3c647e
-    m_ActionName: BestTimeDemo/PlayerBestTimeNow[/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1002333397}
-        m_TargetAssemblyTypeName: BestTimingMono_SessionBestScore, be.elab.besttiming
-        m_MethodName: ResetCurrentBestScore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 439266cd-d1c5-49c4-b0a3-d31c5903b552
-    m_ActionName: BestTimeDemo/ResetBestTimeToZero[/Keyboard/delete]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: BestTimeDemo
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &1904763679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,56 +1058,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904763679}
   m_CullTransparentMesh: 1
---- !u!114 &1915030046 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 532590569350555166, guid: e57cd9bf509191e45bf66689eacacd1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1002333396}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0239d76f04f450a4998d063723ba9618, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &2101639195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2101639196}
-  m_Layer: 0
-  m_Name: Put your best time here
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2101639196
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101639195}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1002333398}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 564589014}
   - {fileID: 1002333396}
-  - {fileID: 1101318291}
-  - {fileID: 1328352464}
   - {fileID: 1231089096}
   - {fileID: 1280069121}
