@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class TDD_TimingSource : MonoBehaviour
+public class BasicDateTimeClockMono : MonoBehaviour
 {
 
     public float m_currentTiming;
@@ -16,12 +16,24 @@ public class TDD_TimingSource : MonoBehaviour
     public UnityEvent<float> m_onCurrentTiming;
     public float m_timingInSeconds;
 
+    public bool m_useInputAction;
+
     private void Awake()
     {
+        ResetTimerToNowWithoutSendingEvent();
+        if (!m_useInputAction) {
+            m_confirmedTiming.action.Enable();
+            m_confirmedTiming.action.performed += ctx => ConfirmedTiming();
+        }
+    }
+
+
+    [ContextMenu("Reset Timer without event")]
+    public void ResetTimerToNowWithoutSendingEvent() {
+
         m_whenStarted = DateTime.Now;
-        m_confirmedTiming.action.Enable();
-        m_confirmedTiming.action.performed += ctx => ConfirmedTiming();
         m_currentTiming = 0;
+
     }
 
 

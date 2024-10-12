@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SkyRidingMono_SecondsToFormatString : MonoBehaviour
+public class BestTimingMono_SecondsToFormatString : MonoBehaviour
 {
-    public string m_formatString = "{0:000.000}";
+    public string m_formatString = "{0:00.000}";
 
     public UnityEvent<string> m_onPushedToString;
     public string m_lastPushed;

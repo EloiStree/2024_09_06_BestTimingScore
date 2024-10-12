@@ -715,7 +715,7 @@ GameObject:
   - component: {fileID: 8284295795286729512}
   - component: {fileID: 7471096322920580936}
   m_Layer: 0
-  m_Name: TDD Input To Timing
+  m_Name: Clock Default Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -783,6 +783,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_timingInSeconds: 0
+  m_useInputAction: 0
 --- !u!1001 &1250507295103688261
 PrefabInstance:
   m_ObjectHideFlags: 0
